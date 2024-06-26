@@ -1,0 +1,211 @@
+:root {
+    --clr-softorange: hsl(35, 77%, 62%);
+    --clr-softred: hsl(5, 85%, 63%);
+    --clr-offwhite: hsl(36, 100%, 99%);
+    --clr-greyishblue: hsl(233, 8%, 79%);
+    --clr-darkgreyishblue: hsl(236, 13%, 42%);
+    --clr-verydarkblue: hsl(240, 100%, 5%);
+    --fontsize-p: 15px;
+    --fontweight-regular: 400;
+    --fontweight-bold: 700;
+    --fontweight-extrabold: 800;
+}
+
+body {
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 152px;
+    font-size: var(--fontsize-p);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--clr-darkgreyishblue);
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: var(--clr-softred);
+}
+
+nav ul li a:focus {
+    cursor: pointer;
+    color: var(--clr-softred);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr;
+    gap: 30px;
+    padding: 68px 0;
+}
+
+.main-article {
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-article .main-photo img {
+    width: 100%;
+}
+
+.main-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.left {
+    padding-right: 15px;
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-right: 15px;
+    color: var(--clr-darkgreyishblue);
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+.right button {
+    width: 60%;
+    padding: 15px;
+    border: none;
+    background-color: var(--clr-softred);
+    font-weight: 900;
+    text-transform: full-width;
+}
+
+.right button:hover {
+    cursor: pointer;
+    background-color: var(--clr-verydarkblue);
+    color: var(--clr-offwhite);
+}
+
+.right button:focus {
+    cursor: pointer;
+    background-color: var(--clr-verydarkblue);
+    color: var(--clr-offwhite);
+}
+
+.new {
+    background-color: var(--clr-verydarkblue);
+    color: var(--clr-softorange);
+    padding: 15px 25px;
+}
+
+.new h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 15px 0 0 0;
+}
+
+.new-article {
+    padding: 15px 0;
+}
+
+.new-article h2 {
+    color: var(--clr-offwhite);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.new-article a {
+    text-decoration: none;
+    color: var(--clr-offwhite);
+}
+
+.new-article a:hover,
+.new-article a:focus {
+    cursor: pointer;
+    color: var(--clr-softorange);
+}
+
+.new-article p {
+    color: var(--clr-greyishblue);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+
+.new-article:nth-of-type(1),
+.new-article:nth-of-type(2) {
+    border-bottom: solid var(--clr-darkgreyishblue) thin;
+}
+
+.numbered {
+    grid-area: 2 / 1 / 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.first, .second, .third {
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    padding: 0;
+}
+
+.numbered img {
+    width: 100px;
+}
+
+.numbered-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.numbered-right h2,
+.numbered-right h3,
+.numbered-right p {
+    margin: 0
+}
+
+.numbered-right h2 {
+    color: var(--clr-softred);
+    font-size: 2rem;
+}
+
+.numbered a {
+    text-decoration: none;
+    color: var(--clr-verydarkblue);
+}
+
+.numbered a:hover, .numbered a:focus {
+    cursor: pointer;
+    color: var(--clr-softred);
+}
+
+.numbered-right p {
+    color: var(--clr-darkgreyishblue);
+    line-height: 1.5rem;
+    padding-right: 45px;
+    font-weight: 300;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
