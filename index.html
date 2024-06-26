@@ -30,7 +30,7 @@
         </ul>
       </nav>
       <div class="mobile-menu" id="mobile-menu">
-        <svg id="close-icon" class="close-icon" width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-label="close modal" id="close-icon" class="close-icon" width="32" height="31" xmlns="http://www.w3.org/2000/svg" tabindex="0">
           <g fill="#00001A" fill-rule="evenodd">
             <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/>
           </g>
@@ -45,7 +45,7 @@
           </ul>
         </nav>
       </div>
-      <svg id="hamburger" class="hamburger" width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+      <svg aria-label="open-modal" id="hamburger" class="hamburger" width="40" height="17" xmlns="http://www.w3.org/2000/svg" tabindex="0">
         <g fill="#00001A" fill-rule="evenodd">
           <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/>
         </g>
@@ -54,15 +54,15 @@
 
     <main id="main">
 
-      <div class="main-article">
+      <div class="main-article" aria-labelledby="main-article-heading" role="region">
 
         <div class="main-photo">
-          <img class="desktop-photo" src="./assets/images/image-web-3-desktop.jpg" alt="">
-          <img class="mobile-photo" src="./assets/images/image-web-3-mobile.jpg" alt="">
+          <img class="desktop-photo" src="./assets/images/image-web-3-desktop.jpg" alt="Image depicting colored blocks">
+          <img class="mobile-photo" src="./assets/images/image-web-3-mobile.jpg" alt="Image depicting colored blocks">
         </div>
         <div class="main-bottom">
           <div class="left">
-            <h1>The Bright Future of Web 3.0?</h1>
+            <h1 id="main-article-heading">The Bright Future of Web 3.0?</h1>
           </div>
           <div class="right">
             <p>
@@ -74,9 +74,9 @@
         </div>
       </div>
 
-      <div class="new">
+      <div class="new" aria-labelledby="new-articles-heading" role="region">
 
-        <h1>New</h1>
+        <h1 id="new-articles-heading">New</h1>
 
         <div class="new-article">
           <h2><a href="#">Hydrogen VS Electric Cars</a></h2>
@@ -95,10 +95,10 @@
   
       </div>
 
-      <div class="numbered">
+      <div class="numbered" aria-labelledby="featured-article-heading" role="region">
         <div class="first">
           <div class="numbered-left">
-            <img src="./assets/images/image-retro-pcs.jpg" alt="">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="Image depicting a retro-style computer">
           </div>
           <div class="numbered-right">
             <h2>01</h2>
@@ -108,7 +108,7 @@
         </div>
         <div class="second">
           <div class="numbered-left">
-            <img src="./assets/images/image-top-laptops.jpg" alt="">
+            <img src="./assets/images/image-top-laptops.jpg" alt="Image depicting a laptop's keyboard">
           </div>
           <div class="numbered-right">
             <h2>02</h2>
@@ -118,7 +118,7 @@
         </div>
         <div class="third">
           <div class="numbered-left">
-            <img src="./assets/images/image-gaming-growth.jpg" alt="">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="Image depicting a Playstation controller falling into a person's hand">
           </div>
           <div class="numbered-right">
             <h2>03</h2>
